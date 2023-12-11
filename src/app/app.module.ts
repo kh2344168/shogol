@@ -16,6 +16,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { BannerComponent } from './home/banner/banner.component';
+import { BestPriceComponent } from './home/best-price/best-price.component';
 
 
 
@@ -26,7 +27,8 @@ import { BannerComponent } from './home/banner/banner.component';
     HeaderComponent,
     SearchComponent,
     HomeComponent,
-    BannerComponent
+    BannerComponent,
+    BestPriceComponent
   ],
   imports: [
     BrowserModule,

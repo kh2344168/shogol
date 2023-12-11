@@ -2,11 +2,12 @@
   background-image: url(../../../assets/pngegg.png);
   background-repeat: no-repeat;
   background-size: 50%;
+  background-position-x: 55px;
   height: 30rem;
   max-width: 100%;
   overflow: hidden;
   background-color: rgb(88, 125, 148);
-  margin-top: 2rem;
+  margin-top: .8rem;
   border-radius: 0 0 6rem 0  ;
   color: white;
   position: relative;
@@ -26,13 +27,12 @@
       h1{
         font-size: 3rem;
         font-weight: 600;
-
       }
       p{
         line-height: normal;
-        color: #FAFAFA;
         margin-top: 12px;
         font-size: 1.2rem;
+        color: #fafafad3;
       }
       button{
         color: #02385A;

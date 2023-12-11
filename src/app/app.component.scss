@@ -21,5 +21,21 @@
 ul {
   list-style: none;
   padding: 0;
-
 }
+button{
+  border: none;
+  background: transparent;
+  width: 12rem;
+  cursor: pointer;
+  background: var(--main-color);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 4px;
+  font-size: 13px;
+}
+button:hover{
+  transition: .3s;
+  opacity: .6;
+}
+
+
