@@ -1,0 +1,78 @@
+.header{
+  border-bottom: 1px solid var( --back-color);
+  .top_line{
+    height: 5px;
+    width: 100%;
+    display: block;
+    background-image:  linear-gradient(to right, #29B1BE , #6B79B9);
+  }
+
+  .header-items{
+    // background-color: red;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    height: 4.5rem;
+    color: var(--font-color);
+    .logo {
+      img{
+        width: 90px;
+      }
+    }
+    .pages{
+      width: 29rem;
+      ul{
+        display: grid;
+        grid-auto-flow: column;
+        margin-top: 16px;
+
+        li{
+          cursor: pointer;
+        }
+        li.active{
+          font-weight: 600;
+        }
+      }
+    }
+    .icons{
+      display: grid;
+      grid-auto-flow: column;
+      width: 4rem;
+      justify-items: center;
+      gap: 10px;
+
+      i{
+        background: rgb(241, 241, 241);
+        color: var(--main-color);
+        padding: 7px;
+        border-radius: px;
+        font-size: 20px;
+      }
+    }
+    .btns{
+      display: grid;
+      grid-auto-flow: column;
+
+      button{
+        border: none;
+        background: transparent;
+        color: var(--second-font-color);
+        width: 8rem;
+        cursor: pointer;
+        font-size: 13px;
+      }
+      button:hover{
+        color: var(--main-color);
+      }
+      button.active{
+        border: none;
+        background: var(--main-color);
+        color: white;
+        border-radius: 8px;
+        padding: 8px 4px ;
+      }
+    }
+  }
+}

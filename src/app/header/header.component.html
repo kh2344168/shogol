@@ -1,0 +1,26 @@
+<div class="header">
+  <span class="top_line">
+
+  </span>
+  <div class="header-items">
+    <div class="header-item logo">
+      <img src="../../assets/logo.svg" alt="">
+    </div>
+    <div class="header-item pages ">
+      <ul >
+        <li *ngFor="let myArray of myObjectArray" class="{{myArray.state}}" >{{myArray.name}}</li>
+      </ul>
+    </div>
+    <div class="header-item icons">
+      <i class="fa-regular fa-message"></i>
+      <i class="fa-regular fa-bell"></i>
+    </div>
+    <div class="header-item btns">
+      <button class="active">كن مشتغل</button>
+      <button>تسجيل الدخول </button>
+    </div>
+  </div>
+</div>
+<app-search></app-search>
+<!-- <a routerLink="/home">Home</a>
+<a routerLink="/search">search</a> -->

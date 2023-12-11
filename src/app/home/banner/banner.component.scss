@@ -1,0 +1,62 @@
+.banner{
+  background-image: url(../../../assets/pngegg.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  height: 30rem;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: rgb(88, 125, 148);
+  margin-top: 2rem;
+  border-radius: 0 0 6rem 0  ;
+  color: white;
+  position: relative;
+
+  .rows{
+    width: 80%;
+    // background-color: rgba(58, 118, 133, 0.411);
+    height: 100%;
+    margin: auto;
+    margin-top: 5rem;
+    z-index: 1000000;
+    position: relative;
+    .text{
+      width: 50%;
+      margin-bottom: 5rem;
+
+      h1{
+        font-size: 3rem;
+        font-weight: 600;
+
+      }
+      p{
+        line-height: normal;
+        color: #FAFAFA;
+        margin-top: 12px;
+        font-size: 1.2rem;
+      }
+      button{
+        color: #02385A;
+        width: 12rem;
+        padding: 10px;
+        margin-right: 10px;
+      }
+    }
+    .down-sec {
+      display: grid;
+      grid-auto-flow: column;
+      width: 60%;
+      div{
+
+      }
+    }
+  }
+}
+.banner::after{
+  content: '';
+  background-color: #02385a9f;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
