@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class ServicesComponent {
   cards = [
     {
-      imageSrc: '../../../assets/work.jpg',
+      imageSrc: 'assets/work.jpg',
       name: 'عدنان السوري',
       specialties: 'تصميم مواقع, جافا سكريبت',
       rating: 4.2,
@@ -19,7 +19,7 @@ export class ServicesComponent {
       timeAgo: 'قبل 30 دقيقة'
     },
     {
-      imageSrc: '../../../assets/work.jpg',
+      imageSrc: 'assets/work.jpg',
       name: 'عدنان السوري',
       specialties: 'تصميم مواقع, جافا سكريبت',
       rating: 4.2,
@@ -30,7 +30,7 @@ export class ServicesComponent {
       timeAgo: 'قبل 30 دقيقة'
     },
     {
-      imageSrc: '../../../assets/work.jpg',
+      imageSrc: 'assets/work.jpg',
       name: 'عدنان السوري',
       specialties: 'تصميم مواقع, جافا سكريبت',
       rating: 4.2,
@@ -41,7 +41,7 @@ export class ServicesComponent {
       timeAgo: 'قبل 30 دقيقة'
     },
     {
-      imageSrc: '../../../assets/work.jpg',
+      imageSrc: 'assets/work.jpg',
       name: 'عدنان السوري',
       specialties: 'تصميم مواقع, جافا سكريبت',
       rating: 4.2,
