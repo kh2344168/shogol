@@ -1,0 +1,45 @@
+<div class="services container pt-4">
+    <div class="ser-title text-center mb-5">
+      <p>بعض الخدمات وظائق شغل</p>
+      <h2>اهم الخدمات الاحترافية لتطوير وتنمية اعمالك</h2>
+    </div>
+    <div class="row justify-content-center gap-3">
+      <div *ngFor="let card of cards" class="card    p-0" style="width: 14.5rem;">
+        <img [src]="card.imageSrc" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="persone row">
+            <i class="fa-solid fa-user-tie user border p-1"></i>
+            <div class="name">
+              <span>{{ card.name }} <i class="fa-solid fa-image"></i></span>
+              <p class="m-0">{{ card.specialties }}</p>
+            </div>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              {{ card.rating }} ({{ card.numReviews }})
+            </div>
+          </div>
+          <div class="serves mt-3">
+            <div class="serves-deta">
+              <span>{{ card.expertise }}</span>
+              <p>{{ card.description }}</p>
+            </div>
+          </div>
+          <div class="serves-price row">
+            <div class="price col-5">
+              <i class="fa-solid fa-money-bill-1-wave"></i>
+              {{ card.price }}
+            </div>
+            <div class="time col-6 p-0">
+              <i class="fa-regular fa-calendar"></i>
+              {{ card.timeAgo }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="more mt-4 mb-4 text-center">
+      <button >عرض الكل</button>
+    </div>
+
+</div>
+

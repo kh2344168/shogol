@@ -1,7 +1,7 @@
 .best-price{
   overflow: hidden;
   width: 100%;
-  height: 60rem;
+  // height: 100rem;
   color: var(--font-color);
   .items{
     width: 80%;
@@ -48,6 +48,10 @@
         grid-auto-flow: row;
       }
     }
+    img{
+      height: 20rem;
+      width: 92%;
+    }
   }
   .forms{
     .form-items{
@@ -70,6 +74,35 @@
         }
       }
     }
+    .boxes{
+      display: grid;
+      grid-auto-flow: column;
+      gap: 30px;
+      .box{
+        height: 19rem;
+        display: grid;
+        justify-items: center;
+        align-content: center;
+        gap: 13px;
+        box-shadow: -4px 5px 20px 0px rgba(0, 0, 0, 0.1215686275);
+        width: 100%;
+        i {
+          color: var(--main-color);
+          font-size: 35px;
+        }
+        p{
+          font-weight: 800;
+        }
+      }
+    }
+  }
+  .image{
+    text-align: center;
+    margin-top: 2rem;
+    img{
+      width: 80%;
+    }
   }
 }
+
 
