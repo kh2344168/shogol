@@ -19,7 +19,7 @@ export class ServicesComponent {
       timeAgo: 'قبل 30 دقيقة'
     },
     {
-      imageSrc: 'assets/work.jpg',
+      imageSrc: 'assets/one.jpg',
       name: 'عدنان السوري',
       specialties: 'تصميم مواقع, جافا سكريبت',
       rating: 4.2,
@@ -30,7 +30,7 @@ export class ServicesComponent {
       timeAgo: 'قبل 30 دقيقة'
     },
     {
-      imageSrc: 'assets/work.jpg',
+      imageSrc: 'assets/two.jpg',
       name: 'عدنان السوري',
       specialties: 'تصميم مواقع, جافا سكريبت',
       rating: 4.2,
@@ -41,7 +41,7 @@ export class ServicesComponent {
       timeAgo: 'قبل 30 دقيقة'
     },
     {
-      imageSrc: 'assets/work.jpg',
+      imageSrc: 'assets/three.jpg',
       name: 'عدنان السوري',
       specialties: 'تصميم مواقع, جافا سكريبت',
       rating: 4.2,

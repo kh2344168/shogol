@@ -9,6 +9,9 @@
   --second-font-color: #1EAAAD;
   --rete-up: #00CBC0;
 }
+.main-color{
+  color: var(--main-color);
+}
 .container{
   width: 80%;
   margin: auto;
@@ -41,5 +44,8 @@ button:hover{
   transition: .3s;
   opacity: .6;
 }
-
+a{
+  text-decoration: none;
+  color: white;
+}
 

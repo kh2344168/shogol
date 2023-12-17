@@ -1,13 +1,59 @@
 .info{
-  height: 50rem;
+  // height: 50rem;
+  margin-bottom: 3rem;
   .info-title{
     p{
       color: var(--main-color);
       font-size: 1.7rem;
       font-weight: 600;
+      margin: 0;
     }
     h2{
       font-weight: 700;
+    }
+
+  }
+  .right-part{
+    .image{
+      img{
+        width: 90%;
+        height: 21.3rem;
+        border-radius: 20px;
+      }
+    }
+  }
+  .lines{
+    span{
+      width: 3rem;
+      height: 3px;
+      background-color: var(--main-color);
+      display: block;
+      border-radius: 50px;
+      margin: 4px 0;
+    }
+  }
+  .lift-part{
+    .row{
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      gap: 5px 5px;
+      label{
+        font-weight: 700;
+      }
+      input{
+        height: 3rem;
+      }
+      .text-area{
+        grid-column: span 2;
+      }
+      .button{
+        grid-column: span 2;
+        text-align: end;
+        margin-top: 10px;
+        button{
+          width: 10rem;
+        }
+      }
     }
   }
 }

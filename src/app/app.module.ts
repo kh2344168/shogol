@@ -19,6 +19,7 @@ import { BannerComponent } from './home/banner/banner.component';
 import { BestPriceComponent } from './home/best-price/best-price.component';
 import { ServicesComponent } from './home/services/services.component';
 import { InfoComponent } from './home/info/info.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -32,7 +33,8 @@ import { InfoComponent } from './home/info/info.component';
     BannerComponent,
     BestPriceComponent,
     ServicesComponent,
-    InfoComponent
+    InfoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
