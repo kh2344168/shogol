@@ -13,5 +13,10 @@ export class HeaderComponent {
     {  name: 'المشتغلين'  , state : '' },
     {  name: 'تواصل معنا',  state : ''}
   ];
+  show : boolean = false ;
 
+  onshow(){
+    this.show = !this.show ;
+    console.log(this.show)
+  }
 }

@@ -1,9 +1,9 @@
 .banner{
   background-image: url(../../../assets/pngegg.png);
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 50% 100%;
   background-position-x: 55px;
-  height: 30rem;
+  // height: 30rem;
   max-width: 100%;
   overflow: hidden;
   background-color: rgb(88, 125, 148);
@@ -11,10 +11,10 @@
   border-radius: 0 0 6rem 0  ;
   color: white;
   position: relative;
+  padding-bottom: 2rem;
 
   .rows{
     width: 80%;
-    // background-color: rgba(58, 118, 133, 0.411);
     height: 100%;
     margin: auto;
     margin-top: 5rem;
@@ -45,9 +45,6 @@
       display: grid;
       grid-auto-flow: column;
       width: 60%;
-      div{
-
-      }
     }
   }
 }
@@ -60,3 +57,71 @@
   top: 0;
   left: 0;
 }
+@media (max-width: 1140px) {
+  .banner{
+    .rows{
+      width: 95%;
+      .down-sec {
+        margin-right: 1rem;
+        width: 60%;
+      }
+  }
+}
+}
+@media (max-width: 992px) {
+  .banner{
+    background-image: none;
+    .rows{
+      width: 90%;
+      .text{
+        width: 80%;
+      }
+      .down-sec {
+        width: 80%;
+      }
+  }
+}
+}
+@media (max-width: 768px) {
+  .banner{
+    .rows{
+      width: 90%;
+      .text{
+        width: 90%;
+      }
+      .down-sec {
+        width: 100%;
+    }
+  }
+}
+
+}
+@media (max-width: 576px) {
+  .banner{
+    .rows{
+      width: 90%;
+      display: grid;
+      justify-items: center;
+      .text{
+        width: 90%;
+        margin-bottom: 2rem;
+        p{
+          font-size: .9rem;
+        }
+        button{
+          width: 10rem;
+        }
+      }
+      .down-sec {
+        width: 90%;
+        display: grid;
+        justify-items: center;
+        grid-auto-flow: dense;
+        grid-template-columns: 1fr 1fr ;
+        gap: 10px;
+        font-size: .7rem;
+    }
+  }
+  }
+}
+

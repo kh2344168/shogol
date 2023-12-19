@@ -1,5 +1,9 @@
 .header{
-  border-bottom: 1px solid var( --back-color);
+  // border-bottom: 1px solid var( --back-color);
+  // transition:  1s;
+  transition: .5s;
+  height: 4.1rem;
+
   .top_line{
     height: 5px;
     width: 100%;
@@ -13,6 +17,7 @@
     margin: auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
+    grid-template-columns: 15% 85%;
     align-items: center;
     height: 4.5rem;
     color: var(--font-color);
@@ -20,6 +25,21 @@
       img{
         width: 90px;
       }
+      .ber{
+        background: var(--main-color);
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+        color: white;
+        border-radius: 9px;
+        display: none;
+        cursor: pointer;
+      }
+    }
+    .items{
+      display: grid;
+      grid-auto-flow: column;
+      align-items: center;
     }
     .pages{
       width: 29rem;
@@ -27,12 +47,14 @@
         display: grid;
         grid-auto-flow: column;
         margin-top: 16px;
-
         li{
           cursor: pointer;
+          i{
+            display: none;
+          }
         }
         li.active{
-          font-weight: 600;
+          font-weight: 700;
         }
       }
     }
@@ -40,20 +62,22 @@
       display: grid;
       grid-auto-flow: column;
       width: 4rem;
-      justify-items: center;
+      justify-content: end;
       gap: 10px;
 
-      i{
+      i , svg{
         background: rgb(241, 241, 241);
         color: var(--main-color);
         padding: 7px;
-        border-radius: px;
+        border-radius: 5px;
         font-size: 20px;
       }
     }
     .btns{
       display: grid;
       grid-auto-flow: column;
+      justify-items: start;
+      justify-content: start;
 
       button{
         border: none;
@@ -75,4 +99,67 @@
       }
     }
   }
+
+
 }
+
+@media (max-width: 1140px) {
+  .header{
+    .header-items{
+      width: 95%;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .header{
+    overflow: hidden;
+    height: 4.1rem;
+    transition: .3s;
+    .top_line{
+      margin-bottom: 10px;
+    }
+    .header-items{
+      grid-template-columns: 100%;
+      .logo {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        .ber{
+          display: block;
+
+        }
+      }
+      .items{
+        // display: none ;
+        grid-auto-flow: row;
+        gap: 10px;
+        .pages{
+          width: 29rem;
+          ul{
+            display: grid;
+            grid-auto-flow: row;
+            gap: 10px;
+            li{
+              cursor: pointer;
+              i{
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+      .icons{
+        justify-items: start;
+        justify-content: start;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+

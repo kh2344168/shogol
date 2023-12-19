@@ -1,73 +1,94 @@
-.services{
-  background-color: #F8FAFC;
+.services {
+  background-color: #f8fafc;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
-  .ser-title{
-    p{
+  .ser-title {
+    p {
       color: var(--main-color);
       font-size: 1.7rem;
       font-weight: 600;
     }
-    h2{
+    h2 {
       font-weight: 700;
     }
   }
-  .card{
+  .card {
     border-radius: 15px;
     border: 0;
     overflow: hidden;
-    img{
+    img {
       max-height: 155px;
     }
-    .card-img-top{
-
+    .card-img-top {
     }
-    .persone{
+    .persone {
       display: grid;
       grid-auto-flow: column;
       align-items: center;
       justify-content: center;
-      .user{
+      .user {
         font-size: 1.5rem;
       }
-      .name{
+      .name {
         font-size: 8px;
-        span{
+        span {
           font-size: 10px;
           font-weight: 700;
         }
-        p{
-          color: #8F8F8F;
+        p {
+          color: #8f8f8f;
           font-size: 8px;
         }
       }
-      .star{
+      .star {
         font-size: 10px;
         direction: ltr;
-        i{
-          color: #FCBF29;
+        i {
+          color: #fcbf29;
           font-size: 15px;
         }
       }
     }
-    .serves-deta{
-      span{
+    .serves-deta {
+      span {
         font-size: 11px;
         font-weight: 800;
       }
-      p{
-        color: #8F8F8F;
+      p {
+        color: #8f8f8f;
         font-size: 10px;
       }
     }
-    .serves-price{
+    .serves-price {
       font-size: 10px;
       color: var(--main-color);
       font-weight: 800;
     }
   }
-  .more{
+  .more {
     margin: auto;
   }
+}
 
+@media (max-width: 1140px) {
+}
+@media (max-width: 992px) {
+  .services {
+    width: 95%;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+  .services {
+    .ser-title {
+      p {
+        font-size: 1.1rem;
+
+      }
+      h2 {
+        font-size: 1.1rem;
+      }
+    }
+  }
 }

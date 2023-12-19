@@ -20,8 +20,11 @@ import { BestPriceComponent } from './home/best-price/best-price.component';
 import { ServicesComponent } from './home/services/services.component';
 import { InfoComponent } from './home/info/info.component';
 import { FooterComponent } from './footer/footer.component';
+import {FormsModule} from '@angular/forms';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
-
+import {Component} from '@angular/core';
+import {ThemePalette} from '@angular/material/core';
 
 
 @NgModule({
@@ -34,14 +37,14 @@ import { FooterComponent } from './footer/footer.component';
     BestPriceComponent,
     ServicesComponent,
     InfoComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule, MatSelectModule,
-    MatAutocompleteModule,ReactiveFormsModule
+    MatAutocompleteModule,ReactiveFormsModule,MatCheckboxModule,MatCheckboxModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

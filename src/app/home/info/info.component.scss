@@ -1,29 +1,28 @@
-.info{
+.info {
   // height: 50rem;
   margin-bottom: 3rem;
-  .info-title{
-    p{
+  .info-title {
+    p {
       color: var(--main-color);
       font-size: 1.7rem;
       font-weight: 600;
       margin: 0;
     }
-    h2{
+    h2 {
       font-weight: 700;
     }
-
   }
-  .right-part{
-    .image{
-      img{
+  .right-part {
+    .image {
+      img {
         width: 90%;
         height: 21.3rem;
         border-radius: 20px;
       }
     }
   }
-  .lines{
-    span{
+  .lines {
+    span {
       width: 3rem;
       height: 3px;
       background-color: var(--main-color);
@@ -32,26 +31,61 @@
       margin: 4px 0;
     }
   }
-  .lift-part{
-    .row{
+  .lift-part {
+    .row {
       display: grid;
-      grid-template-columns: 1fr 1fr ;
+      grid-template-columns: 1fr 1fr;
       gap: 5px 5px;
-      label{
+      label {
         font-weight: 700;
       }
-      input{
+      input {
         height: 3rem;
       }
-      .text-area{
+      .text-area {
         grid-column: span 2;
       }
-      .button{
+      .button {
         grid-column: span 2;
         text-align: end;
         margin-top: 10px;
-        button{
+        button {
           width: 10rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+}
+@media (max-width: 992px) {
+  .info {
+    width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  .info {
+      .lift-part {
+        .row {
+          display: block;
+          grid-template-columns: 100% ;
+        }
+      }
+    }
+  }
+
+@media (max-width: 576px) {
+  .info {
+    .info-title {
+      h2{
+        font-size: 20px;
+      }
+    }
+    .right-part {
+      .image {
+        img {
+          width: 96%;
         }
       }
     }

@@ -8,5 +8,9 @@ import { Component , ViewEncapsulation  } from '@angular/core';
 })
 export class AppComponent {
   title = 'shogol';
+  level1Checked = false;
+  level2Checked = false;
+  level3Checked = false;
+    // Add more categories as needed
 
 }

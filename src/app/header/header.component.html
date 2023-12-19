@@ -1,23 +1,28 @@
-<div class="header">
+<div class="header" [style.height]="show ? '22rem' : '4.1rem'">
   <span class="top_line">
 
   </span>
   <div class="header-items">
     <div class="header-item logo">
       <img src="assets/logo.svg" alt="">
+      <i class="fa-solid fa-bars-staggered ber" (click)="onshow()"></i>
     </div>
-    <div class="header-item pages ">
-      <ul >
-        <li *ngFor="let myArray of myObjectArray" class="{{myArray.state}}" >{{myArray.name}}</li>
-      </ul>
-    </div>
-    <div class="header-item icons">
-      <i class="fa-regular fa-message"></i>
-      <i class="fa-regular fa-bell"></i>
-    </div>
-    <div class="header-item btns">
-      <button class="active">كن مشتغل</button>
-      <button>تسجيل الدخول </button>
+    <div class=" items">
+      <div class="header-item col-12 pages ">
+        <ul class="" >
+          <li *ngFor="let myArray of myObjectArray" routerLink="/home" class="{{myArray.state}}" >
+            {{myArray.name}}
+          </li>
+        </ul>
+      </div>
+      <div class="header-item icons">
+        <i class="fa-regular fa-message"></i>
+        <i class="fa-regular fa-bell"></i>
+      </div>
+      <div class="header-item btns">
+        <button class="active">كن مشتغل</button>
+        <button>تسجيل الدخول </button>
+      </div>
     </div>
   </div>
 </div>
